@@ -1,0 +1,166 @@
+*::selection {
+    background-color: #fff;
+    color: red;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(assets/font/futura-book-font.ttf);
+}
+
+@font-face {
+    font-family: wolfenstein;
+    src: url(assets/font/wolfenstein.ttf);
+}
+
+ul,
+li,
+nav {
+    all: unset;
+}
+
+
+/*  */
+
+.block {
+    display: block;
+}
+
+.font-wolfenstein {
+    font-family: wolfenstein;
+}
+
+.font-futura {
+    font-family: futura;
+}
+
+.user-select\:none {
+    user-select: none;
+}
+
+
+/*  */
+
+.main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main__content {
+    left: 5%;
+    position: relative;
+    z-index: 2;
+}
+
+.main__content__menu {
+    position: relative;
+}
+
+.content__text-logo {
+    margin-block: 40px;
+}
+
+.content__text-logo-1 {
+    font-family: wolfenstein;
+    font-size: 7rem;
+    color: #fff;
+}
+
+.content__text-logo-2 {
+    text-transform: uppercase;
+    font-family: futura;
+    font-size: 2rem;
+    color: #fff;
+    margin-block-start: -20px;
+    margin-inline-start: 20px;
+}
+
+.btn-menu {
+    all: unset;
+    color: #F9F9F9;
+    display: block;
+    cursor: pointer;
+    font-family: futura;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    height: 40px;
+    width: 300px;
+    padding-left: 10px;
+}
+
+.btn-menu:focus {
+    background-color: #F9F9F9;
+    color: black;
+    background: url(assets/img/metal_texture.PNG);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.main__background--1 {
+    background: url(assets/img/wolfenstein-game-the-new-order-wallpaper-1920x1080.jpg);
+    background-attachment: fixed;
+    filter: blur(1.2px) grayscale(1) brightness(1.5);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.main__background--2 {
+    pointer-events: none;
+    background: #680a0da8;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.main__background--3 {
+    right: 5%;
+    top: 0px;
+    object-fit: cover;
+    position: absolute;
+    width: 600px;
+    filter: grayscale(1);
+    animation: test2;
+    animation-duration: 150s;
+}
+
+.main__background--5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+@keyframes test2 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes float {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 10000px 10000px;
+    }
+}
+
+@keyframes float-2 {
+    0% {
+        background-position: 500px 500px;
+    }
+    100% {
+        background-position: 10000px 10000px;
+    }
+}
